@@ -7,6 +7,76 @@
     <title>Form</title>
 </head>
 <body>
+    <header>
+        <h1>the code review</h1>
+    </header>
+
+    <aside>
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your 
+            code is doing right in your inbox
+        </p>
+    </aside>
+
+    <form action="index.html" method="POST">
+
+        <legend>Contact Information</legend>
+        <fieldset>
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="user_fname">
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="user_email">
+
+            <label for="pnumber">Phone Number</label>
+            <input type="tel" id="pnumber" name="user_number">
+
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="user_address">
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city">
+
+            <label for="state">State</label>
+            <select name="user_state" id="state">
+                <option value="GA">GA</option>
+                <option value="NY">NY</option>
+                <option value="CA">CA</option>
+            </select>
+
+            <label for="zip">Zip Code</label>
+            <input type="number" id="zip" name="user_zip">
+        </fieldset>
+
+        <legend>Newsletter</legend>
+        <fieldset>
+            <input type="checkbox" id="hnews" name="user_hnews" value="hnews">
+            <label for="hnews">HTML News</label>
+            <input type="checkbox" id="cnews" name="user_cnews" value="cnews">
+            <label for="cnews">CSS News</label>
+            <input type="checkbox" id="jnews" name="user_jnews" value="jnews">
+            <label for="jnews">Javascript News</label>
+
+            <label> Newsletter format</label>
+            <input type="radio" id="htext" name="user_htext" value="htext">
+            <label for="htext">HTML</label>
+            <input type="radio" id="ptext" name="user_ptext" value="ptext">
+            <label for="ptext">Plain Text</label>
+
+            <label for="comment">Other topics you'd like to hear about</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"> 
+                Sample Text
+            </textarea>
+
+            <button>Sign Up</button>
+        </fieldset>
+
+        <footer>
+            <h2>Copyright The Code Review</h2>
+        </footer>
+
+    </form>
+
     
 </body>
 </html>
