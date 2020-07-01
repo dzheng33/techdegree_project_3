@@ -8,7 +8,7 @@ footer {
     text-align: center;    
 }
 
-header{
+header {
     background-color: #1E1F22;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -20,9 +20,9 @@ h1 {
 }
 
 aside {
-    border-bottom: solid black .5em;
     margin: 0 auto;
     width: 90%;
+    border-bottom: solid black 2px;
 }
 
 aside p {
@@ -30,23 +30,37 @@ aside p {
     margin-right: 1em;
 }
 
+
 fieldset {
-    display: flex;
-    flex-direction: column;
     border: none;
     width: 90%;
     
 }
 
+
 #set1 {
-
     margin: 2em auto 1em;
-    
-
 }
 
 #set2 {
     margin: 0 auto 2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    margin-top: 10px;
+}
+
+#fname,
+#email,
+#pnumber,
+#address,
+#city,
+#state,
+#zip {
+    margin-top: auto;
 }
 
 legend {
@@ -63,8 +77,8 @@ aside p{
 #set1 input,
 button,
 select{
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #set1 input,
@@ -73,7 +87,10 @@ select {
     background-color: #E5E8E8;
 }
 
-#set1 input:not(#zip),
+#zip {
+    width: 50%;
+}
+
 textarea,
 button,
 select {
@@ -91,7 +108,7 @@ select:hover {
 textarea:focus,
 button:focus,
 select:focus{
-    border: .1em solid blue;
+    border: .1em solid #156BD2;
 }
 
 
@@ -100,11 +117,25 @@ textarea,
 button,
 select {
     border-style: none;
-    border-radius: 3.5%;
+    border-radius: 5px;
+}
+
+.box,
+#comment{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    text-align: right;
 }
 
 button {
     background-color: #05B6B6;
     color: white;
     margin-top: auto;
+}
+
+footer {
+    font-style: italic;
 }

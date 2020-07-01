@@ -11,7 +11,7 @@
     <header>
         <h1>the code review</h1>
     </header>
-
+    
     <aside>
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your 
@@ -19,26 +19,38 @@
         </p>
     </aside>
 
+
     <form action="index.html" method="POST">
 
         <fieldset id="set1">
             <legend>Contact Information</legend>
 
+            <div class="container">
             <label for="fname">Full Name</label>
             <input type="text" id="fname" name="user_fname" placeholder="Required">
-            
+            </div>
+
+            <div class="container">
             <label for="email">Email Address</label>
             <input type="email" id="email" name="user_email" placeholder="Required">
+            </div>
 
+            <div class="container">
             <label for="pnumber">Phone Number</label>
             <input type="tel" id="pnumber" name="user_number">
+            </div>
 
+            <div class="container">
             <label for="address">Street Address</label>
             <input type="text" id="address" name="user_address">
+            </div>
 
+            <div class="container">
             <label for="city">City</label>
             <input type="text" id="city" name="user_city">
+            </div>
 
+            <div class="container">
             <label for="state">State</label>
             <select name="user_state" id="state">
                 <option value="" selected>Choose State</option>
@@ -94,9 +106,13 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
             </select>
+            </div>
 
+            <div class="container">
             <label for="zip">Zip Code</label>
             <input type="text" id="zip" name="user_zip">
+            </div>
+
         </fieldset>
 
    
@@ -106,30 +122,32 @@
             <label>Select the newsletters you would like 
                     to recieve 
             </label>
-            <div>
+
+            <div class="box">
             <input type="checkbox" id="hnews" name="user_hnews" value="hnews">
             <label for="hnews">HTML News</label>
-            <br>
+            <br><br>
             <input type="checkbox" id="cnews" name="user_cnews" value="cnews">
             <label for="cnews">CSS News</label>
-            <br>
+            <br><br>
             <input type="checkbox" id="jnews" name="user_jnews" value="jnews">
             <label for="jnews">Javascript News</label>
             </div>
 
             <label> Newsletter format</label>
-            <div>
+            <div class="box">
             <input type="radio" id="htext" name="user_text" value="htext">
             <label for="htext">HTML</label>
-            <br>
+            <br><br>
             <input type="radio" id="ptext" name="user_text" value="ptext">
             <label for="ptext">Plain Text</label>
             </div>
 
+            <div class="box">
             <label for="comment">Other topics you'd like to hear about</label>
             <textarea name="comment" id="comment" cols="30" rows="10"> 
-
             </textarea>
+            </div>
 
             <button>Sign Up</button>
         </fieldset>
