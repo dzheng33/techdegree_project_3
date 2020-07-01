@@ -48,10 +48,12 @@ fieldset {
 
 #set1 {
     margin: 2em auto 1em;
+    background-color: whitesmoke;
 }
 
 #set2 {
     margin: 1.5em auto 2em;
+    background-color: whitesmoke;
 }
 
 .container {
@@ -107,9 +109,13 @@ select {
 
 #set1 input:hover,
 textarea:hover,
-button:hover,
 select:hover {
     background-color: lightgray;
+    transition: ease-in .35s;
+}
+
+button:hover {
+    background-color: teal;
 }
 
 #set1 input:focus,
@@ -117,6 +123,7 @@ textarea:focus,
 button:focus,
 select:focus{
     border: .1em solid #156BD2;
+    background: white;
 }
 
 
@@ -136,6 +143,18 @@ select {
 
 input::placeholder {
     text-align: right;
+}
+
+.newslabel {
+    transition: ease-in .35s;
+}
+
+#hnews:checked + .newslabel,
+#cnews:checked + .newslabel, 
+#jnews:checked + .newslabel, 
+#htext:checked + .newslabel,
+#ptext:checked + .newslabel {
+    color: #05B6B6;
 }
 
 button {

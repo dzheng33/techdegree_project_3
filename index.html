@@ -30,32 +30,32 @@
 
             <div class="container">
             <label for="fname">Full Name</label>
-            <input type="text" id="fname" name="user_fname" placeholder="Required">
+            <input type="text" id="fname" name="user_fname" placeholder="Required" required>
             </div>
 
             <div class="container">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="user_email" placeholder="Required">
+            <input type="email" id="email" name="user_email" placeholder="Required" required>
             </div>
 
             <div class="container">
             <label for="pnumber">Phone Number</label>
-            <input type="tel" id="pnumber" name="user_number">
+            <input type="tel" id="pnumber" name="user_number" placeholder="Phone Number" required>
             </div>
 
             <div class="container">
             <label for="address">Street Address</label>
-            <input type="text" id="address" name="user_address">
+            <input type="text" id="address" name="user_address" placeholder="Address" required>
             </div>
 
             <div class="container">
             <label for="city">City</label>
-            <input type="text" id="city" name="user_city">
+            <input type="text" id="city" name="user_city" placeholder="City" required>
             </div>
 
             <div class="container">
             <label for="state">State</label>
-            <select name="user_state" id="state">
+            <select name="user_state" id="state" required>
                 <option value="" selected>Choose State</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -113,7 +113,7 @@
 
             <div class="container">
             <label for="zip">Zip Code</label>
-            <input type="text" id="zip" name="user_zip">
+            <input type="text" id="zip" name="user_zip" placeholder="Zip Code" required>
             </div>
 
         </fieldset>
@@ -121,7 +121,7 @@
         <div class="border">
 
         </div>
-        
+
         <fieldset id="set2">
             <legend>Newsletter</legend>
         
@@ -131,22 +131,22 @@
 
             <div class="box">
             <input type="checkbox" id="hnews" name="user_hnews" value="hnews">
-            <label for="hnews">HTML News</label>
+            <label for="hnews" class="newslabel">HTML News</label>
             <br><br>
             <input type="checkbox" id="cnews" name="user_cnews" value="cnews">
-            <label for="cnews">CSS News</label>
+            <label for="cnews" class="newslabel">CSS News</label>
             <br><br>
             <input type="checkbox" id="jnews" name="user_jnews" value="jnews">
-            <label for="jnews">Javascript News</label>
+            <label for="jnews" class="newslabel">Javascript News</label>
             </div>
 
             <label> Newsletter format</label>
             <div class="box">
             <input type="radio" id="htext" name="user_text" value="htext">
-            <label for="htext">HTML</label>
+            <label for="htext" class="newslabel">HTML</label>
             <br><br>
             <input type="radio" id="ptext" name="user_text" value="ptext">
-            <label for="ptext">Plain Text</label>
+            <label for="ptext" class="newslabel">Plain Text</label>
             </div>
 
             <div class="box">
