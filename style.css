@@ -1,0 +1,110 @@
+* {
+    font-family: 'Merriweather', serif;
+}
+
+header,
+aside,
+footer {
+    text-align: center;    
+}
+
+header{
+    background-color: #1E1F22;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+}
+
+aside {
+    border-bottom: solid black .5em;
+    margin: 0 auto;
+    width: 90%;
+}
+
+aside p {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 90%;
+    
+}
+
+#set1 {
+
+    margin: 2em auto 1em;
+    
+
+}
+
+#set2 {
+    margin: 0 auto 2em;
+}
+
+legend {
+    font-weight: 600;
+}
+
+label,
+option,
+footer,
+aside p{
+    color: darkgray;
+}
+
+#set1 input,
+button,
+select{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+#set1 input,
+textarea,
+select {
+    background-color: #E5E8E8;
+}
+
+#set1 input:not(#zip),
+textarea,
+button,
+select {
+    width: 100%;
+}
+
+#set1 input:hover,
+textarea:hover,
+button:hover,
+select:hover {
+    background-color: lightgray;
+}
+
+#set1 input:focus,
+textarea:focus,
+button:focus,
+select:focus{
+    border: .1em solid blue;
+}
+
+
+#set1 input,
+textarea,
+button,
+select {
+    border-style: none;
+    border-radius: 3.5%;
+}
+
+button {
+    background-color: #05B6B6;
+    color: white;
+    margin-top: auto;
+}
