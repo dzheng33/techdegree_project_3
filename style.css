@@ -139,3 +139,51 @@ button {
 footer {
     font-style: italic;
 }
+
+@media (min-width: 768px) {
+    
+    aside,
+    fieldset {
+        width: 70%;
+    }
+
+    .container {
+        flex-direction: row;
+    
+    }
+
+    #fname,
+    #email,
+    #pnumber,
+    #address,
+    #city,
+    #state {
+        margin-top: 0;
+        width: 85%;
+        align-self: center;
+        margin-left: auto;
+        
+    }
+
+    #zip {
+        width: 35%;
+        margin-top: 0;
+        align-self: center;
+        margin-left: 9.8%;
+
+    }
+
+    .container label {
+        align-self: center;
+    }
+
+    .box,
+    #comment {
+        margin-top: 20px;
+     
+    }
+
+    #set2 legend {
+        margin-bottom: 20px;
+    }
+}
