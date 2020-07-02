@@ -95,6 +95,8 @@ select{
 textarea,
 select {
     background-color: #E5E8E8;
+    transition: ease-in-out .35s;
+
 }
 
 #zip {
@@ -111,7 +113,6 @@ select {
 textarea:hover,
 select:hover {
     background-color: lightgray;
-    transition: ease-in .35s;
 }
 
 button:hover {
@@ -120,12 +121,10 @@ button:hover {
 
 #set1 input:focus,
 textarea:focus,
-button:focus,
 select:focus{
     border: .1em solid #156BD2;
     background: white;
 }
-
 
 #set1 input,
 textarea,
